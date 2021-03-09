@@ -129,7 +129,7 @@ void	ft_str_to_charmap(char **char_map, char *str, int n1, int n2)
 	int x;
 	int y;
 	
-	i = 0;
+	i = 5;
 	x = 0;
 	while (x <= n1 - 1)
 	{
@@ -144,14 +144,14 @@ void	ft_str_to_charmap(char **char_map, char *str, int n1, int n2)
 	}
 }
 
-void	ft_get_data(char **map)
+void	ft_get_data(char *str)
 {
 	t_data *data;
 	
-	data->x_length = map[0][0] - '0';
-	data->empty = map[0][1];
-	data->obstacle = map[0][2];
-	data->full = map[0][3];
+	data->x_length =  str[0]- '0';
+	data->empty = str[1];
+	data->obstacle = str[2];
+	data->full = str[3];
 }
 
 int	ft_get_min(int n1, int n2, int n3)
